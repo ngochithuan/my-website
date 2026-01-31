@@ -1,0 +1,51 @@
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+}
+
+.box .row {
+  border: 1px dotted gray;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+}
+
+.box .row.body {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.box .row.body .col.side {
+    border: 1px dotted gray;
+    flex-grow: 1;
+}
+
+.box .row.body .col.content {
+    border: 1px dotted gray;
+    flex-grow: 4;
+}
+
+.box .row.body .col.content #pokemon-box {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.box .row.body .col.panel {
+    border: 1px dotted gray;
+    flex-grow: 1;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
